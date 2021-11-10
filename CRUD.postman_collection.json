@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "428d3121-2b61-4d7b-b2ac-58a1a12bf063",
+		"name": "CRUD",
+		"description": "CRUD operation \nCREATE READ UPDATE and DELETE operations for mongodb data base",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ron\",\r\n    \"rollNo\":\"1\",\r\n    \"mobileNo\":\"1234\",\r\n    \"classId\":\"3A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"school"
+					]
+				},
+				"description": "add element to the module \"student\""
+			},
+			"response": []
+		},
+		{
+			"name": "ADDnext",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Don\",\r\n    \"rollNo\":\"2\",\r\n    \"mobileNo\":\"2314\",\r\n    \"classId\":\"2A\",\r\n    \"standard\": \"2\",\r\n    \"division\":\"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/school",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"school"
+					]
+				},
+				"description": "add one more element to existing element in the module \"student\""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sandra\",\r\n    \"rollNo\":\"2\",\r\n    \"mobileNo\":\"2314\",\r\n    \"classId\":\"2A\",\r\n    \"standard\": \"2\",\r\n    \"division\":\"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/school/618bbd45846beee46271e17f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"school",
+						"618bbd45846beee46271e17f"
+					]
+				},
+				"description": "update existing element to the module \"student\""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/school/618bbd45846beee46271e17f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"school",
+						"618bbd45846beee46271e17f"
+					]
+				},
+				"description": "delete one specific element to existing element in the module \"student\""
+			},
+			"response": []
+		}
+	]
+}
