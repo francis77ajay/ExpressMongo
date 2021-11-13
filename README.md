@@ -16,7 +16,11 @@ Node    :It’s a JavaScript runtime environment built on Google Chrome’s V8 e
 
 
 This operation involves 5 student Data and 3 class data.
-
-
 SchoolDB is the Database name  for mongodb.
 
+# OPERATION
+Create Student & Class
+Update Student's Class with Standard and Division
+Delete Student & Class
+Read All Students in a class
+Read all Students in a standard
