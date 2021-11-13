@@ -10,3 +10,11 @@ Express :	It’s a robust Node.js web application framework that helps in creati
 React   :	A JavaScript library used to create beautiful and interactive user interfaces developed by Facebook and the community of individual developers.
 
 Node    :It’s a JavaScript runtime environment built on Google Chrome’s V8 engine, and it compiles js at the runtime.
+
+
+
+This operation involves 5 student Data and 3 class data.
+
+
+SchoolDB is the Database name  for mongodb.
+
