@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "ADD",
+			"name": "ADD student1",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -21,28 +21,30 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9000/school",
+					"raw": "http://localhost:9000/api/school/student",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9000",
 					"path": [
-						"school"
+						"api",
+						"school",
+						"student"
 					]
 				},
-				"description": "add element to the module \"student\""
+				"description": "add first student to the collection \"student\""
 			},
 			"response": []
 		},
 		{
-			"name": "ADDnext",
+			"name": "ADD student2",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Don\",\r\n    \"rollNo\":\"2\",\r\n    \"mobileNo\":\"2314\",\r\n    \"classId\":\"2A\",\r\n    \"standard\": \"2\",\r\n    \"division\":\"A\"\r\n}",
+					"raw": "{\r\n    \"name\":\"troy\",\r\n    \"rollNo\":\"2\",\r\n    \"mobileNo\":\"1224\",\r\n    \"classId\":\"3A\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -50,28 +52,216 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9000/school",
+					"raw": "http://localhost:9000/api/school/student",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9000",
 					"path": [
-						"school"
+						"api",
+						"school",
+						"student"
 					]
 				},
-				"description": "add one more element to existing element in the module \"student\""
+				"description": "add next student with same class details to the collection \"student\""
 			},
 			"response": []
 		},
 		{
-			"name": "UPDATE",
+			"name": "ADD student3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"magnus\",\r\n    \"rollNo\":\"3\",\r\n    \"mobileNo\":\"123234\",\r\n    \"classId\":\"3A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/school/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"student"
+					]
+				},
+				"description": "add next student with same class details to the collection \"student\""
+			},
+			"response": []
+		},
+		{
+			"name": "ADD student4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"cloudy\",\r\n    \"rollNo\":\"4\",\r\n    \"mobileNo\":\"1234\",\r\n    \"classId\":\"2A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/school/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"student"
+					]
+				},
+				"description": "add next student with different class details  to the collection \"student\""
+			},
+			"response": []
+		},
+		{
+			"name": "ADD student5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"maddy\",\r\n    \"rollNo\":\"5\",\r\n    \"mobileNo\":\"1234\",\r\n    \"classId\":\"3B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/school/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"student"
+					]
+				},
+				"description": "add next student with different class details to the collection \"student\""
+			},
+			"response": []
+		},
+		{
+			"name": "ADD class1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"class\":\"2D\",\r\n   \"standard\":\"2\",\r\n   \"division\":\"A\"\r\n  \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/school/class",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"class"
+					]
+				},
+				"description": "add a class with division and standard in collection \"myclasses\""
+			},
+			"response": []
+		},
+		{
+			"name": "ADD class2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"class\":\"3A\",\r\n   \"standard\":\"3\",\r\n   \"division\":\"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/school/class",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"class"
+					]
+				},
+				"description": "add one more class with division \"A\" and standard \"3\" in collection \"myclasses\""
+			},
+			"response": []
+		},
+		{
+			"name": "ADD class3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"class\":\"3B\",\r\n   \"standard\":\"3\",\r\n   \"division\":\"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/school/class",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"class"
+					]
+				},
+				"description": "add one more class with division \"B\" and standard \"3\" in collection \"myclasses\""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATEclassS1",
 			"request": {
 				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"sandra\",\r\n    \"rollNo\":\"2\",\r\n    \"mobileNo\":\"2314\",\r\n    \"classId\":\"2A\",\r\n    \"standard\": \"2\",\r\n    \"division\":\"A\"\r\n}",
+					"raw": "{\r\n    \r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -79,39 +269,272 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9000/school/618bbd45846beee46271e17f",
+					"raw": "http://localhost:9000/api/school/updateCLASS/61900719f0d05690c7c456ee",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9000",
 					"path": [
+						"api",
 						"school",
-						"618bbd45846beee46271e17f"
+						"updateCLASS",
+						"61900719f0d05690c7c456ee"
 					]
 				},
-				"description": "update existing element to the module \"student\""
+				"description": "update class of first student using its classID"
 			},
 			"response": []
 		},
 		{
-			"name": "DELETE",
+			"name": "UPDATEclassS2",
 			"request": {
-				"method": "DELETE",
+				"method": "PATCH",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:9000/school/618bbd45846beee46271e17f",
+					"raw": "http://localhost:9000/api/school/updateCLASS/61900719f0d05690c7c456ee",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9000",
 					"path": [
+						"api",
 						"school",
-						"618bbd45846beee46271e17f"
+						"updateCLASS",
+						"61900719f0d05690c7c456ee"
 					]
 				},
-				"description": "delete one specific element to existing element in the module \"student\""
+				"description": "update class of second student using its classID"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATEclassS3",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/school/updateCLASS/61900722f0d05690c7c456f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"updateCLASS",
+						"61900722f0d05690c7c456f2"
+					]
+				},
+				"description": "update class of third student  using its classID"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATEclassS4",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/school/updateCLASS/61900725f0d05690c7c456f4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"updateCLASS",
+						"61900725f0d05690c7c456f4"
+					]
+				},
+				"description": "update class of fourth student  using its classID"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATEclassS5",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/school/updateCLASS/61900b3e10f19e8abc336ecd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"updateCLASS",
+						"61900b3e10f19e8abc336ecd"
+					]
+				},
+				"description": "update class of 5th student  using its classID"
+			},
+			"response": []
+		},
+		{
+			"name": "FILTERED_CLASS2A",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/school/filtered/class/2A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"filtered",
+						"class",
+						"2A"
+					]
+				},
+				"description": "Lists all students in class standard \"2\" and division \"A\""
+			},
+			"response": []
+		},
+		{
+			"name": "FILTERED_CLASS3A",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/school/filtered/class/3A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"filtered",
+						"class",
+						"3A"
+					]
+				},
+				"description": "Lists all students in class standard \"3\" and division \"A\""
+			},
+			"response": []
+		},
+		{
+			"name": "FILTERED_CLASS3B",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/school/filtered/class/3B",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"filtered",
+						"class",
+						"3B"
+					]
+				},
+				"description": "Lists all students in class standard \"3\" and division \"B\""
+			},
+			"response": []
+		},
+		{
+			"name": "FILTERED_STD",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/school/filtered/standard/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"filtered",
+						"standard",
+						"3"
+					]
+				},
+				"description": "Lists all students in class standard \"2\" in all divisions"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/school/student/61900725f0d05690c7c456f4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"student",
+						"61900725f0d05690c7c456f4"
+					]
+				},
+				"description": "delete one specific element to existing element in the collection \"student\""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE class",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/school/class/2A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"school",
+						"class",
+						"2A"
+					]
+				},
+				"description": "delete one specific element from the collection \"myclasses\""
 			},
 			"response": []
 		}

@@ -15,7 +15,7 @@ con.on('open',()=>{
 })
 app.use(express.json())
 const schoolRouter = require('../CRUD/routers/school')
-app.use('/school',schoolRouter)
+app.use('/api/school',schoolRouter)
 
 
 /*
